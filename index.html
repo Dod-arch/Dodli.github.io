@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dodli Nandi — Technical Writer / Information Developer</title>
+<meta name="description" content="Dodli Nandi — Information Developer II & Technical Writer. Documentation, UX writing, and DAP content that ships like a product.">
+<style>
+  :root{
+    --bg:#0d0f10;
+    --panel:#14171a;
+    --text:#e8e6e1;
+    --muted:#9aa0a6;
+    --accent:#7ee787;
+    --rule:#2a2e31;
+    --mono: "JetBrains Mono", "SF Mono", "Fira Code", ui-monospace, Menlo, Consolas, monospace;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--mono);
+    line-height:1.65;
+    font-size:16px;
+  }
+  a{color:var(--accent); text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .wrap{max-width:760px; margin:0 auto; padding:0 24px;}
+
+  header.top{
+    border-bottom:1px solid var(--rule);
+    padding:28px 0 20px;
+    position:sticky; top:0;
+    background:rgba(13,15,16,0.92);
+    backdrop-filter:blur(6px);
+    z-index:10;
+  }
+  nav{display:flex; flex-wrap:wrap; gap:6px 18px; font-size:13px;}
+  nav a{color:var(--muted);}
+  nav a:hover{color:var(--accent);}
+
+  .hero{padding:48px 0 32px;}
+  .hero h1{font-size:28px; margin:0 0 6px; letter-spacing:-0.02em;}
+  .role{color:var(--muted); font-size:14px; margin-bottom:14px;}
+  .version{
+    display:inline-block; font-size:12px; color:var(--accent);
+    border:1px solid var(--rule); border-radius:4px; padding:2px 8px; margin-bottom:16px;
+  }
+  .contact-line{font-size:14px; color:var(--muted); margin-top:14px;}
+  .contact-line a{color:var(--text);}
+
+  section{padding:44px 0; border-bottom:1px solid var(--rule);}
+  section:last-of-type{border-bottom:none;}
+  h2{font-size:13px; text-transform:uppercase; letter-spacing:0.12em; color:var(--accent); margin:0 0 22px;}
+  h3{font-size:17px; margin:26px 0 4px; color:var(--text);}
+  .meta{color:var(--muted); font-size:13px; margin-bottom:12px;}
+
+  p{margin:0 0 14px; color:#cfd3d6;}
+  .lede{color:var(--text);}
+
+  ul.stats{list-style:none; padding:0; margin:20px 0 0; display:flex; flex-direction:column; gap:8px;}
+  ul.stats li{font-size:14px; color:#cfd3d6;}
+  ul.stats b{color:var(--accent); font-size:15px;}
+
+  .group h4{font-size:13px; color:var(--text); margin:20px 0 8px; font-weight:600;}
+  .group ul{margin:0 0 4px; padding-left:18px;}
+  .group li{color:#cfd3d6; font-size:14px; margin-bottom:6px;}
+
+  details{margin-top:24px; border:1px solid var(--rule); border-radius:6px; padding:14px 16px; background:var(--panel);}
+  summary{cursor:pointer; color:var(--accent); font-size:13px; outline:none;}
+  .past-role{margin-top:14px; font-size:14px;}
+  .past-role b{color:var(--text);}
+  .past-role span{display:block; color:var(--muted); margin-top:2px;}
+
+  .sample{margin-bottom:32px;}
+  .sample .tag{font-size:12px; color:var(--muted); margin-bottom:8px;}
+  .sample .q{color:var(--text); font-weight:600; font-size:14px; margin-bottom:2px;}
+  .sample .outcome{font-size:13px; color:var(--accent); margin-top:8px;}
+
+  .skill-block{margin-bottom:18px;}
+  .skill-block h4{font-size:13px; color:var(--text); margin:0 0 6px;}
+  .skill-block p{font-size:13px; color:var(--muted); margin:0;}
+
+  blockquote{
+    border-left:2px solid var(--accent); margin:0 0 18px; padding:4px 0 4px 16px;
+    color:#cfd3d6; font-size:14px; font-style:italic;
+  }
+  blockquote cite{display:block; margin-top:6px; font-style:normal; color:var(--muted); font-size:12px;}
+  .awards li{font-size:14px; color:#cfd3d6; margin-bottom:4px;}
+  .awards{list-style:none; padding:0;}
+  .awards li:before{content:"🏅 "; }
+
+  footer{padding:40px 0 60px; color:var(--muted); font-size:13px;}
+  footer .ps{margin-top:24px; border-top:1px solid var(--rule); padding-top:20px;}
+  footer b{color:var(--text);}
+
+  @media (max-width:600px){
+    .hero h1{font-size:24px;}
+    nav{font-size:12px; gap:5px 12px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#changelog">Career changelog</a>
+      <a href="#samples">Work samples</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#recognition">Recognition</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <h1>Dodli Nandi</h1>
+    <div class="role">Information Developer II · Technical Writer at Whatfix</div>
+    <div class="version">v8.2.0 — currently shipping: turning 500+ support tickets into UX copy, in-app guidance, and release notes</div>
+    <div class="contact-line">📧 <a href="mailto:dndodli@gmail.com">dndodli@gmail.com</a> · 📞 +91 7824013618</div>
+  </div>
+
+  <section id="about">
+    <h2>About</h2>
+    <p class="lede">I write documentation the way an engineer ships a release — versioned, tested against real support tickets, and measured by whether it actually closes the knowledge gap. Ten years across editing, content marketing, and product documentation.</p>
+    <p>I work at the intersection of engineers, product managers, designers, and customer-facing teams as an Information Developer Group POC at Whatfix, a Digital Adoption Platform. My job is content, but my method is product thinking: every article, release note, and in-app message is a small piece of software that either closes a knowledge gap or doesn't.</p>
+    <p>I approach feedback the same way I approach a manuscript: clarify first, understand second, improve continuously.</p>
+    <ul class="stats">
+      <li><b>500+</b> support tickets mined for knowledge gaps using Claude AI agents</li>
+      <li><b>$374K+</b> — size of the account that adopted an AI feature after reading its release note</li>
+      <li><b>25</b> accounts onboarded within weeks of the SSO release</li>
+    </ul>
+  </section>
+
+  <section id="changelog">
+    <h2>📜 Career changelog</h2>
+    <p>Ten years of experience, written the way I write everything else at work — as a release log. Newest first.</p>
+
+    <h3>v8.2.0 — Whatfix — Information Developer II</h3>
+    <div class="meta">Oct 2024 – Present · Bangalore</div>
+
+    <div class="group">
+      <h4>AI-first documentation and product workflows</h4>
+      <ul>
+        <li>Leveraged AI agents (Claude) to identify 500+ support tickets and turn them into product insights, UX copy changes, and in-app guidance content.</li>
+        <li>Wrote a release note for an AI feature; the account that adopted it after reading was $374K+ in size.</li>
+      </ul>
+    </div>
+
+    <div class="group">
+      <h4>Release management and product documentation</h4>
+      <ul>
+        <li>Contributed to self-service adoption, reducing onboarding from hours to minutes through documentation on single sign-on and end-user authentication; 25 customer accounts onboarded within a few weeks of release.</li>
+        <li>Managed deliverables including Confluence articles, release notes, and troubleshooting/FAQ guides.</li>
+        <li>Audited content-reuse models such as snippets and glossaries for consistency across the knowledge base.</li>
+        <li>Proposed the "Floating Steps" naming correction to replace an internally inconsistent "free-floating" term — adopted into official product nomenclature.</li>
+        <li>Project managed stakeholder questions and sprint demo expectations in an agile environment.</li>
+      </ul>
+    </div>
+
+    <div class="group">
+      <h4>Product enablement and community engagement</h4>
+      <ul>
+        <li>Authored 10+ community articles on feature use-cases and accessibility topics, tracking customer engagement.</li>
+        <li>Used Camtasia, Snagit, and Canva alongside Gemini to create release demo and product videos.</li>
+        <li>Authored in-app content based on customer use-cases and issues surfaced through Zendesk and customer calls.</li>
+      </ul>
+    </div>
+
+    <div class="group">
+      <h4>Localization, usability, and content quality</h4>
+      <ul>
+        <li>Reviewed and published German-translated content for accuracy and quality.</li>
+        <li>Conducted a usability study on documentation, presented at Whatfix jointly with Document360.</li>
+        <li>Monitored customer feedback on Document360 and in-product for improved content outcomes.</li>
+      </ul>
+    </div>
+
+    <div class="group">
+      <h4>Collaboration, quality, and continuous improvement</h4>
+      <ul>
+        <li>Functioned as a track lead, maintaining quality checks, content audits, Jira tracking, and content publishing.</li>
+        <li>Attended weekly scrums, UAT, and release bug bashes to share product enhancements.</li>
+        <li>Wrote UX copy to build product clarity and address customer queries.</li>
+        <li>Worked closely with engineers to resolve content-success issues and broken links flagged in documentation, including tracing recurring "why isn't this showing up" tickets to undocumented root causes (missing Self-Help tags, hidden character limits, Task List visibility).</li>
+      </ul>
+    </div>
+
+    <details>
+      <summary>Show earlier releases · v1.0.0 – v7.0.0</summary>
+
+      <div class="past-role"><b>v7.0.0 — ContactPoint360 — Content Marketing Specialist</b>
+      <span>Content marketing for an e-commerce brand using Semrush and Klaviyo.</span></div>
+
+      <div class="past-role"><b>v6.0.0 — Great Learning — Assistant Content Manager</b>
+      <span>Content branding and CRM marketing using WebEngage and LeadSquared.</span></div>
+
+      <div class="past-role"><b>v5.0.0 — Brainvalley Software Pvt. Ltd. — Lead Content Marketer</b>
+      <span>Owned content branding strategy and execution.</span></div>
+
+      <div class="past-role"><b>v4.0.0 — Freelance — Editor & Content Creator</b>
+      <span>Independent editing and content creation across clients.</span></div>
+
+      <div class="past-role"><b>v3.0.0 — MPS Pvt. Ltd. — Associate Scientific Editor</b>
+      <span>Scientific manuscript editing.</span></div>
+
+      <div class="past-role"><b>v2.0.0 — IDP Connect — Content Editor</b>
+      <span>Content branding and marketing communications using Google Analytics and WordPress CMS.</span></div>
+
+      <div class="past-role"><b>v1.0.0 — Straive — Jr. Executive Language Editor</b>
+      <span>Language editing for Science and Humanities books. The foundation release.</span></div>
+    </details>
+  </section>
+
+  <section id="samples">
+    <h2>🧪 Work samples</h2>
+    <p>A running template, borrowed from how I actually write release notes: what's new, why it matters, and what I did about it.</p>
+
+    <div class="sample">
+      <h3>Single Sign-On & end-user authentication</h3>
+      <div class="tag">Release note · <a href="https://support.whatfix.com/docs/whatfix-single-sign-on" target="_blank" rel="noopener">Read it on Whatfix Support</a></div>
+      <p class="q">What is new?</p>
+      <p>Documented SAML 2.0-based SSO for both dashboard account managers and end-users, including configurable session expiry.</p>
+      <p class="q">Why does it matter?</p>
+      <p>Centralizes access control and lets analytics and content targeting run off verified identity — no manual setup required.</p>
+      <div class="outcome">Outcome: onboarding went from hours to minutes · 25 accounts onboarded</div>
+    </div>
+
+    <div class="sample">
+      <h3>AI voiceover for Flow video exports</h3>
+      <div class="tag">Authoring Agent · <a href="https://support.whatfix.com/docs/ai-voiceover-for-videos?highlight=AI%20voiceover" target="_blank" rel="noopener">Read it on Whatfix Support</a></div>
+      <p class="q">What is new?</p>
+      <p>Wrote up premium narration capabilities — adaptive styles, pronunciation control, and word-level content handling for exported training videos.</p>
+      <p class="q">Why does it matter?</p>
+      <p>Teams can now produce production-ready training videos in minutes, without external recording tools — and brand terms are pronounced consistently every time.</p>
+      <div class="outcome">Outcome: $374K+ adoption driven by this release note</div>
+    </div>
+
+    <div class="sample">
+      <h3>Turning a support call into a product fix</h3>
+      <div class="tag">Call analysis</div>
+      <p class="q">What is new?</p>
+      <p>Reviewed an enablement call between our team and a customer's admin, and traced a "content isn't showing up" complaint back to a missing app-analysis step rather than user error.</p>
+      <p class="q">Why does it matter?</p>
+      <p>If auto-tags depend on a step the product never surfaces, every customer with the same gap eventually files the same ticket. I proposed auto-suggested keywords at content-creation time — tying it back to accessibility feedback from an NPS responder — so accuracy improves before the ticket ever gets filed.</p>
+    </div>
+
+    <div class="sample">
+      <h3>500+ tickets → a knowledge-gap roadmap</h3>
+      <div class="tag">DAP solutioning strategy</div>
+      <p class="q">What is new?</p>
+      <p>Structured recurring L1 support patterns into named themes — Self-Help tags & discoverability, feature customization know-hows, content/widget creation bottlenecks — each mapped through current customer journey → why it's a knowledge gap → proposed DAP solutioning.</p>
+      <p class="q">Why does it matter?</p>
+      <p>A single help article about a character limit only patches one ticket. Spotting the same issue across dozens of tickets is what gets a product team to fix the actual cause — things like showing the limit upfront, adding a discoverable "always show" setting, or making visibility rules clearer.</p>
+    </div>
+
+    <div class="sample">
+      <h3>Accessibility writing for Whatfix community</h3>
+      <div class="tag">Accessibility</div>
+      <p class="q">What is new?</p>
+      <p>Tested Beacons and Pop-ups with a JAWS screen reader and wrote general guidelines for creating accessible DAP content, alongside topic-based articles and FAQ/troubleshooting guides.</p>
+      <p class="q">Why does it matter?</p>
+      <p>Accessibility guidelines only help if writers know exactly what "accessible" means for the specific widget they're documenting — this gave them that clarity.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>🧰 Skills</h2>
+    <div class="skill-block">
+      <h4>Documentation & content strategy</h4>
+      <p>Usability & accessibility writing · Knowledge base management · US English style guide · UX writing & product taxonomy · Content audits & publishing · Video tutorials · Content metadata · Digital Adoption Platform content</p>
+    </div>
+    <div class="skill-block">
+      <h4>Technical</h4>
+      <p>Markdown · HTML & CSS · Structured authoring · Process workflow design · API documentation (Postman, Swagger)</p>
+    </div>
+    <div class="skill-block">
+      <h4>Tools</h4>
+      <p>Document360 · Confluence · Jira · Camtasia · Snagit · Canva · Draw.io · Claude AI · Gemini</p>
+    </div>
+    <div class="skill-block">
+      <h4>Methodologies</h4>
+      <p>Agile / Scrum · UAT · Information mapping & architecture · Project & people management</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>🎓 Education & certifications</h2>
+    <div class="group">
+      <h4>Education</h4>
+      <ul>
+        <li>M.Sc. Applied Microbiology — VIT University, Vellore (Thesis at IIT Madras)</li>
+        <li>B.Sc. Microbiology — St. Paul's College, Calcutta University</li>
+        <li>Get Set Write — Technical Writing — Tech Write Pro</li>
+      </ul>
+    </div>
+    <div class="group">
+      <h4>Certifications</h4>
+      <ul>
+        <li>Modern & Successful Technical Writer Using DITA XML</li>
+        <li>Git and GitHub for Writers</li>
+        <li>Information Mapping</li>
+        <li>Career Essentials in Cybersecurity — Microsoft & LinkedIn</li>
+        <li>Writing with Flair and Editing Mastery</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="recognition">
+    <h2>🏅 Recognition</h2>
+    <blockquote>
+      "You have been paddling furiously to ramp up your knowledge and skills and have proved to be a valuable resource... Feedback is a gift, they say — but you have made implementing feedback an art. First clarifying, then understanding, then improving continuously."
+      <cite>— Nibu Thomas, Information Developer Group, on promotion to ID2</cite>
+    </blockquote>
+    <blockquote>
+      "You've been patient and supportive throughout the release cycle. Your work and support is much appreciated."
+      <cite>— Saurabh Mehta, Product Manager, on the Blocker feature release</cite>
+    </blockquote>
+    <ul class="awards">
+      <li>Whatfix Spot Award — customer mindset in support documentation</li>
+      <li>Whatfix AI Generator Award — AI product documentation</li>
+    </ul>
+  </section>
+
+  <footer id="contact">
+    <h2 style="color:var(--accent);">Let's talk documentation</h2>
+    <p>Open to conversations about technical writing, DAP content, and roles where "ship it like a product" is a compliment, not a stretch.</p>
+    <p>📧 <a href="mailto:dndodli@gmail.com">dndodli@gmail.com</a> · 📞 +91 7824013618 · 🔗 <a href="https://www.linkedin.com/in/dodli-n-13400a107/" target="_blank" rel="noopener">LinkedIn</a></p>
+
+    <div class="ps">
+      <p><b>P.S.</b> — If your docs haven't had a second pair of eyes in a while, or a batch of students at your college could use a crash course in writing (and speaking) so it actually lands — I take on <b>content audits</b> and <b>soft-skills / communication training</b> on the side, campuses especially welcome. Reach out at <a href="mailto:dndodli@gmail.com">dndodli@gmail.com</a>.</p>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>
