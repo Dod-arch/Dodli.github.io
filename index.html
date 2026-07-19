@@ -7,12 +7,18 @@
 <meta name="description" content="Dodli Nandi — Information Developer II & Technical Writer. Documentation, UX writing, and DAP content that ships like a product.">
 <style>
   :root{
-    --bg:#0d0f10;
-    --panel:#14171a;
-    --text:#e8e6e1;
-    --muted:#9aa0a6;
-    --accent:#7ee787;
-    --rule:#2a2e31;
+    --bg:#f7f5f1;
+    --panel:#ffffff;
+    --text:#1c1e1f;
+    --body-text:#33383d;
+    --muted:#5c6167;
+    --accent:#1f7a4d;
+    --rule:#ddd8d0;
+    --fs-xs:13px;
+    --fs-sm:14px;
+    --fs-base:16px;
+    --fs-md:18px;
+    --fs-xl:30px;
     --mono: "JetBrains Mono", "SF Mono", "Fira Code", ui-monospace, Menlo, Consolas, monospace;
   }
   *{box-sizing:border-box;}
@@ -22,8 +28,8 @@
     background:var(--bg);
     color:var(--text);
     font-family:var(--mono);
-    line-height:1.65;
-    font-size:16px;
+    line-height:1.7;
+    font-size:var(--fs-base);
   }
   a{color:var(--accent); text-decoration:none;}
   a:hover{text-decoration:underline;}
@@ -33,72 +39,72 @@
     border-bottom:1px solid var(--rule);
     padding:28px 0 20px;
     position:sticky; top:0;
-    background:rgba(13,15,16,0.92);
+    background:rgba(247,245,241,0.92);
     backdrop-filter:blur(6px);
     z-index:10;
   }
-  nav{display:flex; flex-wrap:wrap; gap:6px 18px; font-size:13px;}
+  nav{display:flex; flex-wrap:wrap; gap:6px 18px; font-size:var(--fs-sm);}
   nav a{color:var(--muted);}
   nav a:hover{color:var(--accent);}
 
   .hero{padding:48px 0 32px;}
-  .hero h1{font-size:28px; margin:0 0 6px; letter-spacing:-0.02em;}
-  .role{color:var(--muted); font-size:14px; margin-bottom:14px;}
+  .hero h1{font-size:var(--fs-xl); margin:0 0 6px; letter-spacing:-0.02em;}
+  .role{color:var(--muted); font-size:var(--fs-sm); margin-bottom:14px;}
   .version{
-    display:inline-block; font-size:12px; color:var(--accent);
+    display:inline-block; font-size:var(--fs-xs); color:var(--accent);
     border:1px solid var(--rule); border-radius:4px; padding:2px 8px; margin-bottom:16px;
   }
-  .contact-line{font-size:14px; color:var(--muted); margin-top:14px;}
+  .contact-line{font-size:var(--fs-sm); color:var(--muted); margin-top:14px;}
   .contact-line a{color:var(--text);}
 
   section{padding:44px 0; border-bottom:1px solid var(--rule);}
   section:last-of-type{border-bottom:none;}
-  h2{font-size:13px; text-transform:uppercase; letter-spacing:0.12em; color:var(--accent); margin:0 0 22px;}
-  h3{font-size:17px; margin:26px 0 4px; color:var(--text);}
-  .meta{color:var(--muted); font-size:13px; margin-bottom:12px;}
+  h2{font-size:var(--fs-xs); text-transform:uppercase; letter-spacing:0.12em; color:var(--accent); margin:0 0 22px;}
+  h3{font-size:var(--fs-md); margin:26px 0 4px; color:var(--text);}
+  .meta{color:var(--muted); font-size:var(--fs-xs); margin-bottom:12px;}
 
-  p{margin:0 0 14px; color:#cfd3d6;}
+  p{margin:0 0 14px; color:var(--body-text);}
   .lede{color:var(--text);}
 
   ul.stats{list-style:none; padding:0; margin:20px 0 0; display:flex; flex-direction:column; gap:8px;}
-  ul.stats li{font-size:14px; color:#cfd3d6;}
-  ul.stats b{color:var(--accent); font-size:15px;}
+  ul.stats li{font-size:var(--fs-base); color:var(--body-text);}
+  ul.stats b{color:var(--accent); font-size:var(--fs-md);}
 
-  .group h4{font-size:13px; color:var(--text); margin:20px 0 8px; font-weight:600;}
+  .group h4{font-size:var(--fs-xs); color:var(--text); margin:20px 0 8px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em;}
   .group ul{margin:0 0 4px; padding-left:18px;}
-  .group li{color:#cfd3d6; font-size:14px; margin-bottom:6px;}
+  .group li{color:var(--body-text); font-size:var(--fs-base); margin-bottom:6px;}
 
   details{margin-top:24px; border:1px solid var(--rule); border-radius:6px; padding:14px 16px; background:var(--panel);}
-  summary{cursor:pointer; color:var(--accent); font-size:13px; outline:none;}
-  .past-role{margin-top:14px; font-size:14px;}
+  summary{cursor:pointer; color:var(--accent); font-size:var(--fs-xs); outline:none;}
+  .past-role{margin-top:14px; font-size:var(--fs-base);}
   .past-role b{color:var(--text);}
   .past-role span{display:block; color:var(--muted); margin-top:2px;}
 
   .sample{margin-bottom:32px;}
-  .sample .tag{font-size:12px; color:var(--muted); margin-bottom:8px;}
-  .sample .q{color:var(--text); font-weight:600; font-size:14px; margin-bottom:2px;}
-  .sample .outcome{font-size:13px; color:var(--accent); margin-top:8px;}
+  .sample .tag{font-size:var(--fs-xs); color:var(--muted); margin-bottom:8px;}
+  .sample .q{color:var(--text); font-weight:600; font-size:var(--fs-sm); margin-bottom:2px;}
+  .sample .outcome{font-size:var(--fs-xs); color:var(--accent); margin-top:8px;}
 
   .skill-block{margin-bottom:18px;}
-  .skill-block h4{font-size:13px; color:var(--text); margin:0 0 6px;}
-  .skill-block p{font-size:13px; color:var(--muted); margin:0;}
+  .skill-block h4{font-size:var(--fs-xs); color:var(--text); margin:0 0 6px; text-transform:uppercase; letter-spacing:0.06em;}
+  .skill-block p{font-size:var(--fs-base); color:var(--body-text); margin:0;}
 
   blockquote{
     border-left:2px solid var(--accent); margin:0 0 18px; padding:4px 0 4px 16px;
-    color:#cfd3d6; font-size:14px; font-style:italic;
+    color:var(--body-text); font-size:var(--fs-base); font-style:italic;
   }
-  blockquote cite{display:block; margin-top:6px; font-style:normal; color:var(--muted); font-size:12px;}
-  .awards li{font-size:14px; color:#cfd3d6; margin-bottom:4px;}
+  blockquote cite{display:block; margin-top:6px; font-style:normal; color:var(--muted); font-size:var(--fs-xs);}
+  .awards li{font-size:var(--fs-base); color:var(--body-text); margin-bottom:4px;}
   .awards{list-style:none; padding:0;}
   .awards li:before{content:"🏅 "; }
 
-  footer{padding:40px 0 60px; color:var(--muted); font-size:13px;}
+  footer{padding:40px 0 60px; color:var(--muted); font-size:var(--fs-sm);}
   footer .ps{margin-top:24px; border-top:1px solid var(--rule); padding-top:20px;}
   footer b{color:var(--text);}
 
   @media (max-width:600px){
-    .hero h1{font-size:24px;}
-    nav{font-size:12px; gap:5px 12px;}
+    .hero h1{font-size:26px;}
+    nav{font-size:var(--fs-xs); gap:5px 12px;}
   }
 </style>
 </head>
