@@ -65,6 +65,9 @@
   h3{font-size:var(--fs-md); margin:26px 0 4px; color:var(--text);}
   .meta{color:var(--muted); font-size:var(--fs-xs); margin-bottom:12px;}
 
+  .flowchart{margin:8px 0 24px; overflow-x:auto;}
+  .flowchart svg{min-width:520px;}
+
   p{margin:0 0 14px; color:var(--body-text);}
   .lede{color:var(--text);}
 
@@ -153,6 +156,43 @@
 
     <h3>v8.2.0 — Whatfix — Information Developer II</h3>
     <div class="meta">Oct 2024 – Present · Bangalore</div>
+
+    <div class="flowchart" role="img" aria-label="Flowchart: support tickets to AI analysis to content to outcomes">
+      <svg viewBox="0 0 720 140" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto;">
+        <defs>
+          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="var(--accent)"></path>
+          </marker>
+        </defs>
+
+        <!-- connectors -->
+        <line x1="170" y1="70" x2="212" y2="70" stroke="var(--accent)" stroke-width="2" marker-end="url(#arrow)"></line>
+        <line x1="352" y1="70" x2="394" y2="70" stroke="var(--accent)" stroke-width="2" marker-end="url(#arrow)"></line>
+        <line x1="534" y1="70" x2="576" y2="70" stroke="var(--accent)" stroke-width="2" marker-end="url(#arrow)"></line>
+
+        <!-- node 1 -->
+        <rect x="8" y="30" width="162" height="80" rx="8" fill="none" stroke="var(--accent)" stroke-width="2"></rect>
+        <text x="89" y="64" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="600" font-family="var(--mono)">500+ support</text>
+        <text x="89" y="82" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="600" font-family="var(--mono)">tickets</text>
+
+        <!-- node 2 -->
+        <rect x="212" y="30" width="140" height="80" rx="8" fill="none" stroke="var(--accent)" stroke-width="2"></rect>
+        <text x="282" y="64" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="600" font-family="var(--mono)">Claude AI</text>
+        <text x="282" y="82" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="600" font-family="var(--mono)">agent analysis</text>
+
+        <!-- node 3 -->
+        <rect x="394" y="30" width="140" height="80" rx="8" fill="none" stroke="var(--accent)" stroke-width="2"></rect>
+        <text x="464" y="56" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="600" font-family="var(--mono)">Docs, UX copy,</text>
+        <text x="464" y="74" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="600" font-family="var(--mono)">in-app guidance,</text>
+        <text x="464" y="92" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="600" font-family="var(--mono)">release notes</text>
+
+        <!-- node 4 -->
+        <rect x="576" y="30" width="136" height="80" rx="8" fill="var(--accent)" stroke="var(--accent)" stroke-width="2"></rect>
+        <text x="644" y="64" text-anchor="middle" fill="var(--bg)" font-size="13" font-weight="600" font-family="var(--mono)">Adoption &</text>
+        <text x="644" y="82" text-anchor="middle" fill="var(--bg)" font-size="13" font-weight="600" font-family="var(--mono)">fewer repeats</text>
+      </svg>
+    </div>
+
 
     <div class="group">
       <h4>AI-first documentation and product workflows</h4>
@@ -245,10 +285,10 @@
       <h3>AI voiceover for Flow video exports</h3>
       <div class="tag">Authoring Agent · <a href="https://support.whatfix.com/docs/ai-voiceover-for-videos?highlight=AI%20voiceover" target="_blank" rel="noopener">Read it on Whatfix Support</a></div>
       <p class="q">What is new?</p>
-      <p>Wrote up premium narration capabilities — adaptive styles, pronunciation control, and word-level content handling for exported training videos.</p>
+      <p>Premium narration capabilities in videos - persona, pronunciation control, and content handling for exported video content required for training largely by LnD teams.</p>
       <p class="q">Why does it matter?</p>
       <p>Teams can now produce production-ready training videos in minutes, without external recording tools — and brand terms are pronounced consistently every time.</p>
-      <div class="outcome">Outcome: $374K+ adoption driven by this release note</div>
+      <div class="outcome">Outcome: $374K worth of customer accounts signed up for the feature adoption via release note</div>
     </div>
 
     <div class="sample">
